@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import sys
 
 app = Flask(__name__)
 
@@ -16,4 +17,7 @@ def overview():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    if len(sys.argv) > 1 and sys.argv[1] == "-d":
+        app.run(debug=True)
+    else:
+        app.run()
