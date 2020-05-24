@@ -17,6 +17,9 @@ def overview():
 
 
 if __name__ == "__main__":
+    # This section allows the user to use the '-d' argument  when starting
+    # app.py to turn on debugging. If no CLA's are entered then dubugging will
+    # be off. 
     if len(sys.argv) > 1 and sys.argv[1] == "-d":
         app.run(debug=True)
     else:
