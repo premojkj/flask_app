@@ -9,7 +9,7 @@
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://kit.fontawesome.com/11a8bab407.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
   </head>
   <body>
 
@@ -21,11 +21,11 @@
 	                </button>
                 </div>
 				<div class="p-4">
-					<img src="resources/images/GOLDespTM.png" style="width:100%; height: auto;">
+					<a href="/"><img src="{{ url_for('static',filename='images/GOLDespTM.png') }}" style="width:100%; height: auto;"></a>
 		  		    <h1><a href="index.html" class="logo"><span style="color: #fac700;">Integrated Supply & Maintenance User Guide</span></a></h1>
 	                <ul class="list-unstyled components mb-5">
 	                    <li class="active">
-	                        <a href="#"><span class="fa fa-book-reader mr-3"></span> General Overview</a>
+	                        <a href="/generalOverview"><span class="fa fa-book-reader mr-3"></span> General Overview</a>
 	                    </li>
 	                    <li>
 	                        <a href="#"><span class="fa fa-laptop-house mr-3"></span> Administration</a>
@@ -67,7 +67,7 @@
 
 	        <div class="footer">
 	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | GOLDesp is a Boeing Inc registered product <i class="icon-heart" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | GOLDesp is a Boeing Inc product. <br>Page produced using template from <i class="icon-heart" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
 						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 	        </div>
 
@@ -77,9 +77,11 @@
         <!-- Page Content  -->
         {% block pageContent %} {% endblock %}
 
-    <script src="resources/js/jquery.min.js"></script>
-    <script src="resources/js/popper.js"></script>
-    <script src="respurces/js/bootstrap.min.js"></script>
-    <script src="resources/js/main.js"></script>
+
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/popper.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+
   </body>
 </html>
