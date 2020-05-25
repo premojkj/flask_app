@@ -1,0 +1,89 @@
+{% extends 'basev2.html' %}
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style2.css')}}">
+
+{% block pageTitle %}
+<title>Navigate</title>
+{% endblock %}
+
+
+{% block breadcrumb %}
+<h4 class="text-light" id="breadcrumb">General Overview > Navigating GOLDesp</h4>
+{% endblock %}
+
+
+{% block pageContent %}
+
+    <h2>Navigating GOLDesp</h2>
+    <p>GOLDesp is designed to be easy to navigate by using a combination of menus, lookups, dropdowns, links and various other tools standard to Web-based design.
+
+    <p class="text-danger quote"><strong>Please note:</strong> GOLDesp is a Commercial Off-The-Shelf (COTS) application, so the functionality and appearance of screens may be customized for your organization. Our Online Help includes all current GOLDesp functionality. Therefore, what you see on your screen may not reflect exactly what is described in the Online Help. In addition, of course, some elements of GOLDesp may not be visible if you do not have the appropriate level of security.</p>
+
+    <ul>
+        <li><a href="#menubar" class="link">Menu Bar</a></li>
+        <li><a href="#userDesk" class="link">User Desktop</a></li>
+        <li><a href="#homeDesk" class="link">Home Desktop</a></li>
+        <li><a href="#infoIcons" class="link">Information Icons</a></li>
+        <li><a href="#quickNav" class="link">Quick Navigation</a></li>
+        <li><a href="#contextNav" class="link">Context Navigation Actions</a></li>
+        <li><a href="#sects" class="link">Sections</a></li>
+        <li><a href="#collapse" class="link">Collapsing Sections</a></li>
+        <li>.... </li>
+    </ul>
+
+    <div class="line"></div>
+
+    <h4 id="menubar">Menu Bar</h4>
+    <p>Within GOLDesp, the Global Navigation line, known as the menu bar, serves as a main menu to navigate between functional areas.</p>
+    <img src="{{ url_for('static',filename='images/MenuBar.jpg') }}" alt="goldesp menu bar" width="800px;" style="margin-bottom:20px;">
+    <p>The User may click on any item listed in the menu bar. When clicked, the navigation pane in GOLDesp displays the primary screen (also known as the User desktop ) for that functional area.</p>
+
+    <div class="line"></div>
+
+    <h4 id="userDesk">User Desktop</h4>
+    <div class="container" style="padding-top:25px;">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static',filename='images/EnterpriseMenuChoices.jpg') }}" alt="goldesp enterprise menu" style="margin-bottom:20px; ALIGN="left" >
+            </div>
+            <div class="col-md-7">
+                <p style="padding-top:60px;">The User Desktop lets the User access functions for a selected Menu option. For example, the figure below illustrates some of the Menu selections that are likely to be available from the Enterprise menu.<br><br>
+                The options displayed in the User Desktop depends on the User 's access to the applicable functions in the Main Menu. Access is controlled by the <a href="/uRoles" class="link">User Roles</a> associated with the User ID of the logged-on User in GOLDesp.<br>
+                To access a User Desktop function, click on the selection. GOLDesp displays the appropriate screen.<br><br>
+                If you routinely use a particular functional area on logging on to GOLDesp, instead of displaying the “Home” pane by default, when you navigate to your preferred area you may click the “Make Default Desktop” link at the bottom of the navigation pane to make that area your personal default.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+    <h4 id="homeDesk">Home Desktop</h4>
+    <div class="container" style="padding-top:25px;">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="{{ url_for('static',filename='images/HomeDesktop.gif') }}" alt="goldesp enterprise menu" style="padding-top:50px; ALIGN="left" >
+            </div>
+            <div class="col-md-9">
+                <p>The “Home” desktop is configurable by the GOLDesp Administrator. The right side provides several options that can be tailored for the User.<br>
+                The GOLDesp Administrator should contact Tapestry Solutions Technical Support team for assistance.<br>
+                The default Home Desktop provides the elements described below.</p>
+                <dl>
+                    <dt>Search Online Help</dt>
+                    <dd>Enter a word or words in the textbox, and click the arrow. The GOLDesp Help screen displays, and displays the Help topics containing those words.</dd>
+                    <dt>Top Tips</dt>
+                    <dd>The GOLDesp Administrator can configure the section with up to five entries, to display pop-up windows containing useful text, or links to external web pages.<br>
+                    For assistance, the Administrator should consult Tapestry Customer Support.</dd>
+                    <dt>Links</dt>
+                    <dd>The GOLDesp Administrator can configure the section with up to five entries, to display pop-up windows containing useful text, or links to external web pages.<br>
+                    For assistance, the Administrator should consult Tapestry Customer Support.</dd>
+                    <dt>Saved Queries</dt>
+                    <dd>The Saved Query functionality is available on a select group of <a href="/web1" class="link">Web 1.0</a> Inquiry screens throughout the application . This allows the User to enter values in one or more of the Criteria fields and save that data to a named query for subsequent recall. This section of the Home Desktop displays the queries that have been saved by the logged-on User.<br>
+                    An example of a Users specific saved queries is shown in the image to the left. </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

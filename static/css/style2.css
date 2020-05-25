@@ -238,3 +238,13 @@ th {
     background-color: #7386d5;
     color: #f7f7f7;
 }
+
+.quote {
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+dl {
+    color: #999;
+}
