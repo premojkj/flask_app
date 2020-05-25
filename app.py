@@ -7,13 +7,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/page2')
+@app.route('/about')
 def page2():
-    return render_template('page2.html')
+    return render_template('about.html')
 
-@app.route('/generalOverview')
-def overview():
-    return render_template('generalOverview_aboutGoldesp.html')
 
 
 if __name__ == "__main__":

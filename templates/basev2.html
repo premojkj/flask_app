@@ -27,52 +27,218 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <img class="menuLogo" src="{{ url_for('static',filename='images/GOLDespTM.png') }}" alt="goldesp logo">
+                <a href="/"><img class="menuLogo" src="{{ url_for('static',filename='images/GOLDespTM.png') }}" alt="goldesp logo"></a>
             </div>
             <h2 id="subHeading"><strong>v17 User Guide</strong></h2>
             <ul class="list-unstyled components">
                 <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">General Overview</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <a href="#genOver" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">General Overview</a>
+                    <ul class="collapse list-unstyled" id="genOver">
                         <li>
-                            <a href="#">Page 1</a>
+                            <a href="/about">About GOLDesp</a>
                         </li>
                         <li>
-                            <a href="#">Home 2</a>
+                            <a href="#">Navigating GOLDesp</a>
                         </li>
                         <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Administration</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Daily Operations</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
+                            <a href="#">Web 1.0 Screens</a>
                         </li>
                         <li>
-                            <a href="#">Page 2</a>
+                            <a href="#">Web 2.0 Screens</a>
                         </li>
                         <li>
-                            <a href="#">Page 3</a>
+                            <a href="#">E-Certification</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Maintenance Plan</a>
+                    <a href="#admin" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Administration</a>
+                    <ul class="collapse list-unstyled" id="admin">
+                        <li>
+                            <a href="#users" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Users</a>
+                            <ul class="collapse list-unstyled" id="users">
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Authorizations</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Alerts & Notifications</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; User Roles</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Labor Recording</small></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Printers</a>
+                        </li>
+                        <li>
+                            <a href="#">Default Desktop</a>
+                        </li>
+                        <li>
+                            <a href="#">Admin 4</a>
+                        </li>
+                        <li>
+                            <a href="#">Admin 5</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#">Work Recording</a>
+                    <a href="#dailyOps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Daily Operations</a>
+                    <ul class="collapse list-unstyled" id="dailyOps">
+                        <li>
+                            <a href="#">Compass Calibration</a>
+                        </li>
+                        <li>
+                            <a href="#">PPI Data</a>
+                        </li>
+                        <li>
+                            <a href="#">Onboard Software Log</a>
+                        </li>
+                        <li>
+                            <a href="#">Sanctions</a>
+                        </li>
+                        <li>
+                            <a href="#">Weight & Balance</a>
+                        </li>
+                        <li>
+                            <a href="#">Expendable Positions</a>
+                        </li>
+                        <li>
+                            <a href="#">Replenishments</a>
+                        </li>
+                        <li>
+                            <a href="#">Fuelling</a>
+                        </li>
+                        <li>
+                            <a href="#">Flight Servicing</a>
+                        </li>
+                        <li>
+                            <a href="#">Debreifing (Update Item Usage)</a>
+                        </li>
+                        <li>
+                            <a href="#">Flight Scheduling</a>
+                        </li>
+                        <li>
+                            <a href="#">Status Boards/Dashboards</a>
+                        </li>
+                    </ul>
                 </li>
+                <li>
+                    <a href="#struc" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Structures</a>
+                    <ul class="collapse list-unstyled" id="struc">
+                        <li>
+                            <a href="#">Designed Structures</a>
+                        </li>
+                        <li>
+                            <a href="#">Physical Structures</a>
+                        </li>
+                        <li>
+                            <a href="#">Component Remove & Install</a>
+                        </li>
+                        <li>
+                            <a href="#">Configuration & Role States</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#maintPro" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Maintenance Program</a>
+                    <ul class="collapse list-unstyled" id="maintPro">
+                        <li>
+                            <a href="#">Maintenance Planning/Forecasting</a>
+                        </li>
+                        <li>
+                            <a href="#">Tasks</a>
+                        </li>
+                        <li>
+                            <a href="#">Default Maintenane Schedules</a>
+                        </li>
+                        <li>
+                            <a href="#">TCTO Management</a>
+                        </li>
+                        <li>
+                            <a href="#">Penalty Factoring</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#workRec" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Work Recording</a>
+                    <ul class="collapse list-unstyled" id="workRec">
+                        <li>
+                            <a href="#wos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Work Orders</a>
+                            <ul class="collapse list-unstyled" id="wos">
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Work Order Types</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Create & Open Work Order</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Defer Work Order</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Close Work Order</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Work Steps</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Remove/Install Compnents</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Record Labor</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Record Delays</small></a>
+                                </li>
+                                <li>
+                                    <a href="#"><small>&emsp; &emsp; Other Work Order Sections</small></a>
+                                </li>
+                            </ul>   
+                        </li>
+                        <li>
+                            <a href="#">Work Packages</a>
+                        </li>
+                        <li>
+                            <a href="#">Work Centers</a>
+                        </li>
+                        <li>
+                            <a href="#">Tool Management</a>
+                        </li>
+                        <li>
+                            <a href="#">Reliability Coding</a>
+                        </li>
+                        <li>
+                            <a href="#">Cannibalization</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#cal">Calibration</a>                    
+                </li>
+                <li>
+                    <a href="#repsForm" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reports & Forms</a>
+                    <ul class="collapse list-unstyled" id="repsForm">
+                        <li>
+                            <a href="#">GOLDesp Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Pentaho Web Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Forms</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                
             </ul>
 
             <ul class="list-unstyled CTAs">
                 <li>
-                    <a href="#" class="download">Walkthrough Guide</a>
+                    <a href="#" class="download">Process Walkthroughs</a>
                 </li>
                 <li>
                     <a href="https://www.tapestrysolutions.com/products/goldesp-mro-supply/" class="article" target="_blank">About Tapestry Solutions</a>
@@ -88,10 +254,10 @@
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
-                        <!-- <span>Menu</span> -->
+                        <span id="menuBtnLabel">Hide Menu</span>
                     </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
+                        <i class="fas fa-align-justify"></i>                           
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -99,7 +265,7 @@
                         <!-- <h4 class="text-light" id="breadcrumb">General Overview -> About Goldesp</h4> -->
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><img class="topLogo" src="{{ url_for('static',filename='images/GOLDespTM.png') }}" alt="goldesp logo"></a>
+                                <img class="topLogo" src="{{ url_for('static',filename='images/GOLDespTM.png') }}" alt="goldesp logo">
                             </li>
                         </ul>
                     </div>
@@ -130,6 +296,12 @@
                 $('#sidebar, #content').toggleClass('active');
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                var btnLabel = document.getElementById("menuBtnLabel");
+                if (btnLabel.innerHTML === "Hide Menu") {
+                    btnLabel.innerHTML = "Menu";
+                } else {
+                   btnLabel.innerHTML = "Hide Menu"; 
+                }
             });
         });
     </script>
