@@ -100,7 +100,7 @@ a:focus {
 }
 
 /* Not used right now but would highlight the current selction - needs to be applied on each page to the active page - maybe future feature upgrade */
-#sidebar ul li.active>a,     
+#sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
@@ -221,5 +221,9 @@ a.article:hover {
 
 #breadcrumb {
     padding-left: 25px;
-    
+
+}
+
+.link {
+    text-decoration-color: blue !important;
 }
