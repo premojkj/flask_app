@@ -27,7 +27,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <img class="menuLogo" src="{{ url_for('static',filename='images/GOLDespTM.png') }}" alt="goldesp logo">
+                <a href="/"><img class="menuLogo" src="{{ url_for('static',filename='images/GOLDespTM.png') }}" alt="goldesp logo"></a>
             </div>
             <h2 id="subHeading"><strong>v17 User Guide</strong></h2>
             <ul class="list-unstyled components">
@@ -35,7 +35,7 @@
                     <a href="#genOver" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">General Overview</a>
                     <ul class="collapse list-unstyled" id="genOver">
                         <li>
-                            <a href="#">About GOLDesp</a>
+                            <a href="/about">About GOLDesp</a>
                         </li>
                         <li>
                             <a href="#">Navigating GOLDesp</a>
@@ -254,10 +254,10 @@
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
-                        <!-- <span>Menu</span> -->
+                        <span id="menuBtnLabel">Hide Menu</span>
                     </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
+                        <i class="fas fa-align-justify"></i>                           
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -265,7 +265,7 @@
                         <!-- <h4 class="text-light" id="breadcrumb">General Overview -> About Goldesp</h4> -->
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><img class="topLogo" src="{{ url_for('static',filename='images/GOLDespTM.png') }}" alt="goldesp logo"></a>
+                                <img class="topLogo" src="{{ url_for('static',filename='images/GOLDespTM.png') }}" alt="goldesp logo">
                             </li>
                         </ul>
                     </div>
@@ -296,6 +296,12 @@
                 $('#sidebar, #content').toggleClass('active');
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                var btnLabel = document.getElementById("menuBtnLabel");
+                if (btnLabel.innerHTML === "Hide Menu") {
+                    btnLabel.innerHTML = "Menu";
+                } else {
+                   btnLabel.innerHTML = "Hide Menu"; 
+                }
             });
         });
     </script>
