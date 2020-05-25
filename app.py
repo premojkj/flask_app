@@ -5,12 +5,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    try:
+        return render_template('index.html')
+    except Exception, e:
+        return str(e)
 
 @app.route('/about')
-def page2():
+def about():
     return render_template('about.html')
 
+@app.route('/compass')
+def compass():
+    return render_template('compass.html')
 
 
 if __name__ == "__main__":

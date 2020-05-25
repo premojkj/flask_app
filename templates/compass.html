@@ -1,0 +1,56 @@
+{% extends 'basev2.html' %}
+
+
+{% block pageTitle %}
+<title>Compass</title>
+{% endblock %}
+
+
+{% block breadcrumb %}
+<h4 class="text-light" id="breadcrumb">Daily Operations > Compass Calibration</h4>
+{% endblock %}
+
+
+{% block pageContent %}
+
+    <h2>Compass Calibration</h2>
+    
+    <div class="line"></div>
+    
+    <h4>Screen Functions</h4>
+    <p>The following are the associated GOLDesp screen functions:</p>
+    <ul>
+        <li><i>Aircraft Data > Inquiries > <em>Compass Calibration</em></i></li>
+    </ul>
+    
+    <div class="line"></div>
+
+    <h4>Permissions</h4>
+    <p>The following permissions are associated with this function:</p>
+    <table>
+        <tr>
+            <th id="test">Action</th>
+            <th>Role</th>
+            <th>Permission</th>
+        </tr>
+        <tr>
+            <td>Inquiry</td>
+            <td>Maintenance User</td>
+            <td>aircraftData.core.compassInquiry</td>            
+        </tr>
+        <tr>
+            <td>Create/Update</td>
+            <td>Maintenance Supervisor</td>
+            <td>aircraftData.core.compassMaintenance</td>
+        </tr>
+    </table>
+    
+
+    <div class="line"></div>
+
+    
+    
+
+    
+
+{% endblock %}
