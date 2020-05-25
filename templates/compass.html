@@ -1,5 +1,6 @@
 {% extends 'basev2.html' %}
 
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style2.css')}}">
 
 {% block pageTitle %}
 <title>Compass</title>
@@ -20,10 +21,10 @@
        aircraft’s magnetic compass using known magnetic directions as a reference to ensure an accurate
        reading. </p>
     <ul>
-        <li><a href="#inquiry">Compass Calibration Inquiry</a></li>
-        <li><a href="#create">Create New Calibration Record</a></li>
-        <li><a href="#update">Update Calibration Record</a></li>
-        <li><a href="#delete">Delete Calibration Record</a></li>
+        <li><a href="#inquiry" class="link">Compass Calibration Inquiry</a></li>
+        <li><a href="#create" class="link">Create New Calibration Record</a></li>
+        <li><a href="#update" class="link">Update Calibration Record</a></li>
+        <li><a href="#delete" class="link">Delete Calibration Record</a></li>
     </ul>
     <div class="line"></div>
 
@@ -63,13 +64,13 @@
     <div class="line"></div>
 
     <h4 id="inquiry">Compass Calibration Inquiry</h4>
-    <p>To carry out an inquiry:</p>
+    <p>To carry out an Compass Calibration record inquiry:</p>
     <ol>
         <li> Navigate to <code>Aircraft Data > Inquiries > Compass Calibration</code></li>
         <li> Enter the relevant search terms in the <code>Compass Calibration Criteria screen.</code></li>
         <li> Select <kbd>Search</kbd> and your results will be displayed on the <code>Compas Calibration List</code> screen</li>
         <li> To open a record, click on <kbd>View</kbd> icon in the action column. The record will be open in Read Only Mode</li>
-        <li> Users with the <a href=""#permissions" class="link"><mark>appropriate permisisons</mark></a> will have an <a href="update"><kbd>Update</kbd></a>
+        <li> Users with the <a href="#permissions"><span class="link">appropriate permisisons</span></a> will have an <a href="#update" class="link"><kbd>Update</kbd></a>
              button available in the left menu </li>
     </ol>
 
@@ -79,7 +80,7 @@
     <p>To create a new compass calibration record:</p>
     <ol>
         <li> Navigate to <code>Aircraft Data > Inquiries > Comapss Calibration</code> </li>
-        <li> Users with the <a href=""#permissions"><mark>appropriate permissions</mark></a> will have a <kbd>Create New</kbd> button available in
+        <li> Users with the <a href="#permissions"><span class="link">appropriate permissions</span> </a>will have a <kbd>Create New</kbd> button available in
             the left menu. CLick on this button. </li>
         <li> The <code>Compass Calibration Maintenance</code> initial screen is presented. Complete the relevant fields and select <kbd>Next</kbd> <em>Note: </em>The following fields are mandatory:
             <dl>

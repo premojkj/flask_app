@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #f8f9fa;
 }
 
 p {
@@ -225,5 +225,16 @@ a.article:hover {
 }
 
 .link {
-    text-decoration-color: blue !important;
+    color: #17a2b8 !important;
+    text-decoration: underline;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+th {
+    background-color: #7386d5;
+    color: #f7f7f7;
 }
