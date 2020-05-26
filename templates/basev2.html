@@ -31,10 +31,12 @@
                 <a href="/"><img class="menuLogo" src="{{ url_for('static',filename='images/GOLDespTM.png') }}" alt="goldesp logo"></a>
             </div>
             <h2 id="subHeading"><strong>v17 User Guide</strong></h2>
-            <ul class="list-unstyled components">
+            
+            <div class = "dropdown">
+            <ul class="list-unstyled components dropdown">
                 <li>
-                    <a href="#genOver" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-book-reader mr-3"></span> General Overview</a>
-                    <ul class="collapse list-unstyled" id="genOver">
+                    <a href="#genOver" data-toggle="collapse" aria-expanded="false" class="dropdown dropdown-toggle"><span class="fas fa-book-reader mr-3"></span> General Overview</a>
+                    <ul class="collapse list-unstyled dropdown" id="genOver">
                         <li>
                             <a href="/about">About GOLDesp</a>
                         </li>
@@ -245,6 +247,7 @@
                 </li>
 
             </ul>
+            </div>
 
             <ul class="list-unstyled CTAs">
                 <li>
@@ -298,6 +301,7 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+            
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
             });
@@ -305,13 +309,7 @@
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar, #content').toggleClass('active');
                 $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                var btnLabel = document.getElementById("menuBtnLabel");
-                if (btnLabel.innerHTML === "Hide Menu") {
-                    btnLabel.innerHTML = "Menu";
-                } else {
-                   btnLabel.innerHTML = "Hide Menu";
-                }
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');    
             });
         });
     </script>
