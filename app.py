@@ -5,10 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    try:
-        return render_template('index.html')
-    except Exception, e:
-        return str(e)
+    return render_template('index.html')    
 
 @app.route('/about')
 def about():
@@ -29,6 +26,9 @@ def uRoles():
 @app.route('/compass')
 def compass():
     return render_template('compass.html')
+
+def runner(db):
+    app.run(debug=db)
 
 
 if __name__ == "__main__":
